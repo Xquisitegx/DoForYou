@@ -1,0 +1,375 @@
+.my-profile {
+    height: 100%;
+    flex-grow: 1;
+}
+.my-profile-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.responsive-profile-photo-box {
+    display: none;
+}
+
+.my-profile-wrapper {
+    padding: 9rem 1rem;
+}
+
+.my-profile-wrapper-top {
+    display: flex;
+}
+
+.my-profile-wrapper-left {
+    width: 75%;
+}
+
+.my-profile-wrapper-left-section-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+.my-profile-wrapper-left-section-profile a {
+    font-weight: 700;
+}
+
+.my-profile-wrapper-left-section-reviews a {
+    color: var(--secondary-light);
+}
+
+.my-profile-wrapper-left-section-profile a,
+.my-profile-wrapper-left-section-reviews a {
+    text-decoration: none;
+}
+
+.my-profile-wrapper-left-profile-form {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.my-profile-wrapper-left-profile-title {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.my-profile-name-combine-left,
+.my-profile-name-combine-right,
+.my-profile-address-combine-left,
+.my-profile-address-combine-right {
+    width: 100%;
+}
+
+.my-profile-name-combine-right,
+.my-profile-address-combine-right {
+    margin-left: 1rem;
+}
+
+.my-profile-name-combine,
+.my-profile-address-combine {
+    display: flex;
+}
+
+.my-profile-input-field input,
+.my-profile-input-field select,
+.my-profile-input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.my-profile-input-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    color: var(--secondary-medium);
+}
+
+.my-profile-wrapper-bottom {
+    display: flex;
+    margin-top: 2rem;
+}
+.responsive-profile-bottom-box {
+    display: none;
+}
+
+.my-profile-wrapper-left-password-title {
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.my-profile-wrapper-left-password-sub-title {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.my-profile-wrapper-left-password-desc-list {
+    margin: 1rem 1.5rem 2rem;
+    font-size: 16px;
+    font-weight: 300;
+    list-style-type: "✔️";
+}
+
+.my-profile-wrapper-left-password-desc-list li {
+    color: var(--secondary-medium-dark);
+    padding-left: 0.25rem;
+}
+/* Right section - profile photo / save button */
+
+.my-profile-wrapper-right {
+    width: 25%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-profile-wrapper-right-profile-photo-image {
+    display: flex;
+    margin: 5rem auto 1.5rem;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.my-profile-wrapper-right-profile-photo-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.upload-box {
+    font-size: 12px;
+    background-color: var(--secondary-very-light);
+    border-radius: 50px;
+    width: 100%;
+    outline: none;
+}
+
+::-webkit-file-upload-button {
+    background-color: #fff;
+    border: 2px solid var(--secondary-medium);
+    padding: 6px 12px;
+    border-radius: 50px;
+    outline: none;
+}
+
+::-webkit-file-upload-button:hover {
+    background-color: var(--secondary-medium);
+    color: #fff;
+}
+
+.my-profile-wrapper-right-profile-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+#my-profile-remove-btn {
+    margin-left: 5px;
+}
+
+.my-profile-wrapper-right-bottom {
+    margin-bottom: 2rem;
+}
+
+.my-profile-wrapper-right-bottom-manage-btn {
+    margin-bottom: 0.5rem;
+}
+
+.my-profile-wrapper-right-password {
+    width: 25%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+/* 13 inch MacBook */
+@media only screen and (max-width: 1440px) {
+    .my-profile-wrapper {
+        padding: 6.5rem 1rem;
+    }
+}
+
+/* Large screen */
+@media only screen and (max-width: 1200px) {
+    .my-profile-wrapper {
+        padding: 4rem 1rem;
+    }
+    .my-profile-wrapper-left-section-title,
+    .my-profile-wrapper-left-password-title {
+        font-size: 36px;
+    }
+    .my-profile-wrapper-left-profile-title {
+        font-size: 18px;
+    }
+}
+
+/* Small screen */
+@media only screen and (max-width: 992px) {
+    .my-profile-wrapper {
+        padding: 2rem 1rem;
+    }
+    .my-profile-wrapper-left-section-title,
+    .my-profile-wrapper-left-password-title {
+        font-size: 32px;
+    }
+
+    .my-profile-wrapper-right-bottom-manage-btn .btn--square,
+    .my-profile-wrapper-right-bottom-save-btn .btn--square {
+        font-size: 16px;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .my-profile-wrapper {
+        padding: 1rem 1rem;
+    }
+
+    .responsive-profile-photo-box {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .responsive-profile-photo {
+        margin-bottom: 5px;
+    }
+
+    .responsive-my-profile-image-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .responsive-my-profile-wrapper-right-profile-upload-box {
+        width: 40%;
+    }
+    .responsive-my-profile-wrapper-right-profile-btns {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+    }
+
+    .responsive-profile-photo-image {
+        display: flex;
+        margin: 1rem auto;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+    }
+    .responsive-profile-photo-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .my-profile-wrapper-left {
+        width: 100%;
+    }
+    .my-profile-wrapper-left-section-title,
+    .my-profile-wrapper-left-password-title {
+        font-size: 28px;
+    }
+    .my-profile-wrapper-left-profile-form {
+        margin-top: 1.75rem;
+    }
+    .my-profile-wrapper-right {
+        display: none;
+    }
+
+    .my-profile-wrapper-right-profile-btns {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .my-profile-wrapper-right-profile-btns button {
+        margin: 4px 0.2rem;
+    }
+    .my-profile-wrapper-right-bottom-manage-btn .btn--square,
+    .my-profile-wrapper-right-bottom-save-btn .btn--square {
+        font-size: 16px;
+    }
+
+    .responsive-profile-bottom-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .responsive-profile-bottom-manage-btn,
+    .responsive-profile-bottom-save-btn {
+        width: 100%;
+    }
+
+    .responsive-profile-bottom-save-btn {
+        margin-left: 0.5rem;
+    }
+
+    .responsive-profile-bottom-manage-btn .btn--square,
+    .responsive-profile-bottom-save-btn .btn--square {
+        font-size: 16px;
+    }
+
+    .my-profile-wrapper-bottom {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .my-profile-wrapper-right-password {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .responsive-my-profile-wrapper-right-profile-upload-box {
+        width: 80%;
+    }
+    .responsive-my-profile-wrapper-right-profile-btns {
+        width: 80%;
+    }
+
+    .my-profile-wrapper-left-section-title,
+    .my-profile-wrapper-left-password-title {
+        font-size: 24px;
+    }
+    .my-profile-wrapper-left-profile-form {
+        margin-top: 1rem;
+    }
+    .my-profile-wrapper-left-profile-title {
+        font-size: 16px;
+    }
+    .my-profile-input-label {
+        font-size: 12px;
+    }
+    .my-profile-input-field input,
+    .my-profile-input-field select,
+    .my-profile-input-field textarea {
+        font-size: 14px;
+    }
+
+    .my-profile-wrapper-right-bottom .btn--square,
+    .my-profile-wrapper-right-bottom-save-btn .btn--square {
+        font-size: 14px;
+    }
+
+    .responsive-profile-bottom-save-btn .btn--square,
+    .responsive-profile-bottom-manage-btn .btn--square {
+        font-size: 14px;
+    }
+
+    .my-profile-wrapper-left-password-sub-title {
+        font-size: 16px;
+    }
+    .my-profile-wrapper-left-password-desc-list {
+        font-size: 14px;
+    }
+}

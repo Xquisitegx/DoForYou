@@ -1,0 +1,120 @@
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary-yellow {
+    background-color: var(--primary-yellow);
+    color: var(--text-main);
+    border: 1px solid var(--primary-yellow);
+}
+
+.btn--primary-blue {
+    background-color: var(--primary-blue);
+    color: #fff;
+    border: 1px solid var(--primary-blue);
+}
+
+.btn--secondary-dark {
+    background-color: var(--secondary-dark);
+    color: #fff;
+    border: 1px solid var(--secondary-dark);
+}
+
+.btn--white {
+    background-color: #fff;
+    color: var(--text-main);
+    border: 1px solid #fff;
+}
+
+.btn--cancel {
+    background-color: var(--cancel);
+    color: var(--text-main);
+    border: 1px solid var(--cancel);
+}
+
+.btn--outline {
+    background-color: #fff;
+    color: var(--text-main);
+    padding: 8px 20px;
+    border: 2px solid var(--secondary-medium);
+}
+
+.btn--category {
+    height: 50px;
+    padding: 12px 26px;
+    font-size: 16px;
+    background-color: var(--secondary-light);
+    color: var(--text-main);
+    border: 2px solid var(--secondary-medium);
+}
+
+.btn--slim-category {
+    height: 38px;
+    border: 2px solid var(--secondary-medium);
+}
+.btn--slim-category-clicked {
+    height: 38px;
+    border: 3px solid var(--secondary-dark);
+    background-color: var(--secondary-light);
+    margin: 3px 5px;
+}
+
+.btn--small,
+.btn--small-bold {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.btn--small-wide,
+.btn--small-wide-bold {
+    padding: 8px 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.btn--medium,
+.btn--medium-bold {
+    height: 40px;
+    padding: 8px 30px;
+    font-size: 16px;
+}
+
+.btn--small-bold,
+.btn--medium-bold,
+.btn--large-bold,
+.btn--wide-bold,
+.btn--small-wide-bold {
+    font-weight: 700;
+}
+
+.btn--large,
+.btn--large-bold {
+    height: 50px;
+    padding: 12px 36px;
+    font-size: 18px;
+}
+
+.btn--wide,
+.btn--wide-bold {
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.btn--rounded {
+    border-radius: 25px;
+}
+
+.btn--half-rounded {
+    border-radius: 10px;
+}
+/*
+.btn--medium:hover,
+.btn--large:hover {
+    background-color: #fff;
+    color: #242424;
+    transition: all 0.3s ease-out;
+}
+*/

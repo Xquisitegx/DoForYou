@@ -1,0 +1,330 @@
+.performer {
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.performer-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.performer-wrapper {
+    display: flex;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 4rem;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 2px 4px 24px 0 rgb(0, 0, 0, 0.1);
+}
+
+.performer-wrapper-left {
+    width: 40%;
+    background-color: var(--secondary-light);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 5rem 1rem;
+}
+
+.performer-wrapper-left-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.performer-wrapper-left-text {
+    color: var(--text-default);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* center? */
+}
+
+.performer-wrapper-left-text-main {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.performer-wrapper-left-text-sub {
+    margin-top: 0.3rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.performer-image {
+    padding: 0 1rem;
+}
+
+.performer-image-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.performer-image-png {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.performer-wrapper-right {
+    width: 60%;
+    padding: 5rem 3rem;
+}
+
+.performer-wrapper-outline {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.performer-content {
+    margin: auto 0;
+}
+
+.performer-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.performer-title > h1 {
+    color: var(--text-main);
+    font-size: 30px;
+    text-align: left;
+}
+
+.performer-form {
+    margin: 0 auto;
+}
+
+.performer-input-label {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.performer-input-field input {
+    background-color: #fafafa;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 2rem;
+    padding-left: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+}
+
+.performer-input-field textarea {
+    background-color: #fafafa;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+}
+
+.performer-categories-list-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.categories-field-list {
+    margin-bottom: 2rem;
+}
+
+.performer-categories-btn {
+    display: flex;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 25px;
+    background-color: var(--secondary-light);
+    border: 2px solid var(--secondary-medium);
+}
+
+.cate-icon-size {
+    margin: auto 0;
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.cate-icon-small {
+    margin: auto 0;
+}
+
+.performer-info-combine,
+.performer-email-phone-combine {
+    display: flex;
+}
+
+.performer-info-combine-left,
+.performer-info-combine-center,
+.performer-email-phone-combine-left {
+    margin-right: 1rem;
+}
+
+.performer-email-phone-combine-left,
+.performer-email-phone-combine-right {
+    width: 100%;
+}
+
+.performer-info-combine-left,
+.performer-info-combine-center {
+    width: 100%;
+}
+
+.performer-info-combine-right {
+    width: 100%;
+}
+
+.performer-label-combine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.performer-input-sub-label {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--text-disabled);
+}
+
+.performer-submit {
+    display: flex;
+}
+
+.performer-btn-cancel {
+    width: 30%;
+}
+
+.performer-btn-submit {
+    margin-left: 1rem;
+    width: 70%;
+}
+
+.performer-container-bottom {
+    margin-top: 33px;
+    box-sizing: border-box;
+}
+
+/* 13 inch MacBook */
+@media only screen and (max-width: 1440px) {
+    .performer-wrapper {
+        margin: 0 8rem;
+    }
+}
+
+/* Large screen */
+@media only screen and (max-width: 1200px) {
+    .performer-wrapper {
+        margin: 0 6rem;
+    }
+}
+/* Small screen */
+@media only screen and (max-width: 992px) {
+    .performer-container {
+        width: 100%;
+    }
+    .performer-wrapper {
+        flex-direction: column;
+        margin: 0 4rem;
+    }
+    .performer-wrapper-left {
+        width: 100%;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0;
+    }
+    .performer-image-box {
+        width: 90%;
+        margin: 4rem auto 0;
+    }
+    .performer-wrapper-right {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .performer-container {
+        width: 100%;
+    }
+    .performer-wrapper {
+        margin: 0 2.5rem;
+    }
+    .performer-info-combine,
+    .performer-email-phone-combine {
+        flex-direction: column;
+    }
+    .performer-categories-list-row {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .performer-categories-btn-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .performer-btn-submit {
+        margin-left: 0.5rem;
+    }
+
+    .performer-submit .btn--wide-bold {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .performer-wrapper {
+        margin: 0 33px;
+    }
+    .performer-wrapper-left-text-main {
+        font-size: 18px;
+    }
+    .performer-wrapper-left-text-sub {
+        font-size: 14px;
+    }
+
+    .performer-wrapper-right {
+        padding: 4rem 2rem;
+    }
+
+    .performer-title > h1 {
+        font-size: 24px;
+    }
+    .performer-input-label {
+        font-size: 12px;
+    }
+    .performer-input-field input,
+    .performer-input-field textarea {
+        font-size: 14px;
+    }
+    .performer-input-field .radio-combine-label {
+        font-size: 14px;
+    }
+    .performer-input-sub-label {
+        font-size: 12px;
+    }
+    .performer-btn-cancel {
+        width: 50%;
+    }
+
+    .performer-btn-submit {
+        width: 50%;
+    }
+    .performer-submit .btn--wide-bold {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,136 @@
+.categories-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categories-wrapper {
+    padding: 5rem 0;
+}
+
+.categories-title {
+    width: 100%;
+    text-align: center;
+}
+
+.title-main {
+    font-size: 45px;
+}
+
+.title-sub {
+    margin-top: 15px;
+}
+
+.cate-icon {
+    font-size: 16px;
+    color: var(--secondary-medium);
+    margin-right: 7px;
+}
+.categories-list {
+    margin-top: 3rem;
+}
+
+.categories-list-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.categories-list-btn-box {
+    display: flex;
+    justify-content: center;
+}
+.categories-btn-content {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    padding: 12px 30px;
+    border: 2px solid var(--secondary-medium);
+    border-radius: 24px;
+    background-color: var(--secondary-very-light);
+}
+
+.categories-btn-name {
+    font-size: 18px;
+}
+
+/* Large screen */
+@media only screen and (max-width: 1200px) {
+    .categories-btn-name {
+        font-size: 16px;
+    }
+}
+
+/* Small screen */
+@media only screen and (max-width: 992px) {
+    .categories-title .title-main {
+        font-size: 40px;
+    }
+    .categories-title .title-sub {
+        margin-top: 14px;
+        font-size: 16px;
+    }
+    .categories-list-row {
+        margin: 8px 0;
+    }
+    .categories-btn-content {
+        margin: 0 3px;
+    }
+    .categories-btn-name {
+        font-size: 14px;
+    }
+    .categories-btn-content {
+        padding: 10px 12px;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .categories-title .title-main {
+        font-size: 35px;
+    }
+    .categories-title .title-sub {
+        margin-top: 12px;
+        font-size: 15px;
+    }
+    .categories-list {
+        margin-top: 2rem;
+    }
+    .categories-list-row {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .categories-btn-name {
+        font-size: 18px;
+    }
+
+    .categories-list-btn-box {
+        margin: 5px 0;
+    }
+    .categories-btn-content {
+        padding: 12px 30px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .categories-title .title-main {
+        font-size: 30px;
+    }
+    .categories-title .title-sub {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .categories-list {
+        margin-top: 1.5rem;
+    }
+
+    .categories-btn-name {
+        font-size: 16px;
+    }
+    .categories-btn-content {
+        padding: 10px 24px;
+    }
+}

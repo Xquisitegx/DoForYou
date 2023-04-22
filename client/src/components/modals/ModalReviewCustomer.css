@@ -1,0 +1,104 @@
+.modal-review-customer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-review-customer-content {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-review-customer-header,
+.modal-review-customer-footer {
+    padding: 10px;
+}
+.modal-review-customer-header {
+    background-color: var(--secondary-medium);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.modal-review-customer-title {
+    margin: 0 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.modal-review-customer-body {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 1rem;
+}
+
+.modal-review-customer-user-image-box {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-review-customer-user-image {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+.modal-review-customer-user-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.modal-review-customer-body-username {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.modal-review-customer-good-bad-box {
+    display: flex;
+    justify-content: center;
+}
+.modal-review-customer-good,
+.modal-review-customer-bad {
+    margin: 20px 20px;
+}
+
+.modal-review-customer-body-keyword-box {
+    display: flex;
+    justify-content: center;
+}
+
+.review-customer-good-keyword-row {
+    display: flex;
+    justify-content: center;
+}
+.review-customer-good-keyword-row .btn--slim-category {
+    margin: 3px 5px;
+}
+
+.modal-review-customer-btns {
+    display: flex;
+    margin: 0 3rem 2rem;
+}
+
+.modal-review-customer-cancel-btn,
+.modal-review-customer-submit-btn {
+    width: 100%;
+}
+
+.modal-review-customer-cancel-btn {
+    margin-left: 10px;
+}
+
+.selected-thumbs {
+    color: var(--primary-yellow);
+}

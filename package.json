@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "gridfs-stream": "^1.1.1",
+    "mime": "^3.0.0",
+    "multer-gridfs-storage": "^5.0.2",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

@@ -1,0 +1,53 @@
+.modal-cancel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-cancel-content {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-cancel-header,
+.modal-cancel-footer {
+    padding: 10px;
+}
+.modal-cancel-header {
+    background-color: var(--secondary-medium);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.modal-cancel-title {
+    margin: 0 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.modal-cancel-body {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.modal-cancel-btns {
+    display: flex;
+    margin: 0 3rem 1rem;
+}
+
+.modal-cancel-no-btn,
+.modal-cancel-yes-btn {
+    width: 100%;
+}
+
+.modal-cancel-yes-btn {
+    margin-left: 10px;
+}

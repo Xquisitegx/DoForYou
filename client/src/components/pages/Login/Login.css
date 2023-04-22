@@ -1,0 +1,247 @@
+/* ----- Share with Register and Become Performer page ----- */
+.nav-small {
+    padding: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-small-left {
+    display: flex;
+    align-items: center;
+}
+
+.back-arrow {
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+.back-to-main,
+.go-to-another-step {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 14px;
+}
+
+#btn-register {
+    margin-left: 1rem;
+}
+/* ------------------------------------ */
+
+.login {
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.login-wrapper {
+    display: flex;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 4rem;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 2px 4px 24px 0 rgb(0, 0, 0, 0.1);
+}
+
+.login-wrapper-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    height: 500px;
+    background-color: var(--secondary-light);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.login-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+.login-text-main {
+    margin-bottom: 12px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    -webkit-text-stroke: 1px black;
+}
+.login-text-sub {
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-image {
+    height: 100%;
+    margin: 0 2rem 3rem;
+}
+
+.login-image-box {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.login-image-png {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.login-wrapper-right {
+    width: 45%;
+}
+
+.login-wrapper-outline {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login-content {
+    width: 100%;
+    margin: 0 3rem;
+}
+
+.login-title {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.login-title-main {
+    color: var(--text-main);
+    font-size: 30px;
+    text-align: left;
+}
+
+.login-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login-input-label {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.login-input-field input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 1.5rem;
+    padding-left: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+}
+
+.login-error-message {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid #cf3a3f;
+    margin-bottom: 1.5rem;
+}
+
+.login-error-message-text {
+    color: #cf3a3f;
+}
+
+.login-submit,
+.login-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.login-bottom {
+    margin-top: 1rem;
+}
+
+.login-bottom-link {
+    color: var(--text-main);
+}
+
+.login-container-bottom {
+    margin-top: 33px;
+    box-sizing: border-box;
+}
+
+/* 13 inch MacBook */
+@media only screen and (max-width: 1440px) {
+}
+
+/* Large screen */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small screen */
+@media only screen and (max-width: 992px) {
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+        margin: 0 2.5rem;
+    }
+    .login-wrapper-left {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0;
+    }
+    .login-text {
+        margin-top: 2rem;
+    }
+    .login-text-main {
+        font-size: 30px;
+    }
+    .login-text-sub {
+        font-size: 16px;
+    }
+    .login-image {
+        margin-top: 16px;
+        margin-bottom: 2rem;
+    }
+    .login-image-box {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .login-wrapper-right {
+        width: 100%;
+    }
+    .login-content {
+        margin: 2rem 3rem;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .login-wrapper {
+        margin: 0 33px;
+    }
+    .login-title {
+        margin-bottom: 2rem;
+    }
+    .login-title-main {
+        font-size: 25px;
+    }
+    .login-input-field input {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,143 @@
+.carousel {
+    padding: 3rem 2.5rem;
+    background-color: #f0f0f0;
+    color: #fff;
+    width: calc(100vw - 17px); /* 100vw excluding scroll bar */
+}
+/* */
+.review-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    text-align: left;
+}
+
+.review-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+.single-review-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.single-review-quotes {
+    margin-bottom: 10px;
+}
+.review-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review-price {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.review-desc {
+    height: 140px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.review-performer-info {
+    display: flex;
+}
+
+.review-performer-pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-performer-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-performer-details {
+    margin: auto 0;
+}
+
+.review-performer-user-name,
+.user-rating {
+    margin-bottom: 7px;
+}
+
+.review-performer-user-name {
+    font-size: 18px;
+}
+
+.review-performer-user-rating {
+    font-weight: 300;
+}
+
+.review-performer-user-completed {
+    font-weight: 300;
+    margin-top: 5px;
+}
+/* */
+.slick-slide {
+    padding: 0 10px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--secondary-dark) !important;
+}
+
+.slick-dots li button::before {
+    color: var(--secondary-dark) !important;
+    font-size: 1rem !important;
+    top: 2rem !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: var(--secondary-dark) !important;
+}
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+    .carousel {
+        padding: 3rem 2rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .carousel {
+        padding: 2rem 2rem;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .carousel {
+        padding: 1.5rem 2rem;
+    }
+    .review-price,
+    .review-desc {
+        font-size: 15px;
+    }
+    .review-performer-user-name {
+        font-size: 15px;
+    }
+
+    .review-performer-user-rating,
+    .review-performer-user-completed {
+        font-size: 14px;
+    }
+}

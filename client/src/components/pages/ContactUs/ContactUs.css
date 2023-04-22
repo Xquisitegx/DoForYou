@@ -1,0 +1,269 @@
+.contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.contact-wrapper {
+    padding: 0 2rem;
+}
+
+.contact-content {
+    display: flex;
+}
+
+.contact-left-content {
+    width: 45%;
+    margin-right: 3rem;
+}
+
+.contact-left-content-title {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+}
+
+.contact-left-content-sub-title {
+    font-size: 38px;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.contact-left-content-sub-title-upper-line {
+    letter-spacing: -0.1rem;
+}
+
+.contact-left-content-sub-title-lower-line {
+    margin-top: 0.5rem;
+    letter-spacing: -0.1rem;
+}
+
+.contact-left-content-desc {
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contact-left-content-mail-box {
+    display: flex;
+}
+.contact-left-content-mail {
+    background-color: #fff;
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 6px 6px 14px 0 rgb(0, 0, 0, 0.2);
+}
+
+.contact-left-content-mail-left {
+    display: flex;
+    align-items: center;
+}
+
+.contact-left-content-mail-right {
+    width: 100%;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.contact-left-content-mail-desc {
+    font-weight: 300;
+}
+
+.contact-left-content-mail-email {
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+.contact-right-content {
+    width: 55%;
+}
+
+.contact-right-content-title {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-right-content-form {
+    margin-top: 3rem;
+}
+
+.contact-right-content-sub-title {
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--secondary-medium);
+    margin-bottom: 0.75rem;
+}
+
+.contact-name-combine {
+    display: flex;
+}
+
+.contact-name-combine-left,
+.contact-name-combine-right {
+    width: 100%;
+}
+
+.contact-name-combine-right {
+    margin-left: 1rem;
+}
+
+.contact-input-label {
+    font-size: 14px;
+    color: var(--text-disabled);
+    margin-bottom: 0.4rem;
+}
+
+.contact-input-field {
+    margin-bottom: 1rem;
+}
+
+.contact-input-field input,
+.contact-input-field textarea {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+}
+
+.contact-input-field input {
+    height: 35px;
+    padding-left: 10px;
+}
+
+.contact-input-field textarea {
+    padding: 10px;
+}
+
+/* 13 inch MacBook */
+@media only screen and (max-width: 1440px) {
+}
+
+/* Large screen */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small screen */
+@media only screen and (max-width: 992px) {
+    .contact-wrapper {
+        padding: 2rem 1rem;
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-left-content,
+    .contact-right-content {
+        width: 100%;
+    }
+    .contact-left-content {
+        margin-right: 0;
+    }
+    .contact-left-content-title,
+    .contact-left-content-sub-title,
+    .contact-left-content-desc {
+        text-align: center;
+    }
+    .contact-left-content-mail-box {
+        justify-content: center;
+    }
+    .contact-left-content-mail {
+        justify-content: center;
+    }
+    .contact-right-content {
+        margin-top: 3rem;
+    }
+    .contact-right-content-form {
+        margin: 1.5rem 0;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .contact-wrapper {
+        padding: 1rem 1rem;
+    }
+
+    .contact-left-content-title {
+        font-size: 52px;
+    }
+    .contact-left-content-sub-title {
+        margin-top: 1.5rem;
+        font-size: 34px;
+    }
+    .contact-left-content-desc {
+        margin-top: 1.5rem;
+        font-size: 18px;
+    }
+    .contact-left-content-mail {
+        margin-top: 1.5rem;
+    }
+    .contact-left-content-mail-left {
+        font-size: 16px;
+    }
+    .contact-left-content-mail-right {
+        font-size: 18px;
+    }
+
+    .contact-right-content-title {
+        font-size: 30px;
+    }
+
+    .contact-submit .btn--square {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .contact-left-content-title {
+        font-size: 48px;
+    }
+    .contact-left-content-sub-title {
+        margin-top: 1rem;
+        font-size: 30px;
+    }
+    .contact-left-content-desc {
+        margin-top: 1rem;
+        font-size: 16px;
+    }
+    .contact-left-content-mail {
+        margin-top: 1rem;
+    }
+    .contact-left-content-mail-left {
+        font-size: 14px;
+    }
+    .contact-left-content-mail-right {
+        font-size: 16px;
+    }
+
+    .contact-right-content-title {
+        font-size: 24px;
+    }
+    .contact-right-content-sub-title {
+        font-size: 14px;
+    }
+    .contact-input-label {
+        font-size: 12px;
+    }
+    .contact-input-field input,
+    .contact-input-field textarea {
+        font-size: 14px;
+    }
+    .contact-submit .btn--square {
+        font-size: 14px;
+    }
+}

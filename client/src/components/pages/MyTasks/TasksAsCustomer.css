@@ -1,0 +1,455 @@
+.tasks-customer {
+    height: 100%;
+    flex-grow: 1;
+}
+/* -------------------- Search bar -------------------- */
+.tasks-customer-search-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.tasks-customer-search-container .tasks-customer-search-input {
+    border: 2px solid var(--secondary-dark);
+}
+.tasks-customer-search-wrap {
+    width: 18%;
+}
+
+.tasks-customer-search-wrap .tasks-customer-search-box {
+    position: relative;
+    height: 40px;
+}
+
+.tasks-customer-search-wrap
+    .tasks-customer-search-box
+    .tasks-customer-search-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.tasks-customer-search-wrap
+    .tasks-customer-search-box
+    .tasks-customer-search-input {
+    border-radius: 30px;
+}
+
+.tasks-customer-search-btn-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 32px;
+    background-color: var(--secondary-dark);
+    z-index: 1;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+.tasks-customer-search-btn {
+    color: #fff;
+}
+
+.tasks-customer-content {
+    margin-top: 3.5rem;
+    width: 100%;
+    display: flex;
+}
+
+/* -------------------- Role filter -------------------- */
+.tasks-customer-role-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.tasks-customer-role-box {
+    position: relative;
+    height: 50px;
+    width: 500px;
+}
+
+.role-filter {
+    border: 2px solid var(--secondary-dark);
+    border-radius: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tasks-customer-role-customer-button,
+.tasks-customer-role-performer-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 42px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.tasks-customer-role-customer-button {
+    top: 0;
+    left: 0;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: var(--secondary-dark);
+    border: none;
+}
+
+.tasks-customer-role-performer-button {
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+/* -------------------- Content -------------------- */
+.tasks-customer-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.tasks-customer-wrapper {
+    padding: 5rem 1rem;
+}
+
+.tasks-customer-title {
+    width: 100%;
+    text-align: center;
+}
+
+.tasks-customer-title-main {
+    font-size: 45px;
+}
+
+.tasks-customer-title-sub {
+    margin: 0.3rem 0 2rem;
+}
+
+.tasks-customer-title-sub-text-lower {
+    margin-top: 0.3rem;
+}
+
+.tasks-customer-content {
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+}
+
+.tasks-customer-left-content {
+    width: 50%;
+    border-right: 1px solid var(--secondary-light);
+    top: 0;
+    bottom: 0;
+}
+.tasks-customer-right-content {
+    width: 50%;
+}
+
+/*  */
+
+.tasks-customer-left-content-title,
+.tasks-customer-right-content-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 1.5rem;
+}
+
+.tasks-customer-left-list-item,
+.tasks-customer-right-list-item {
+    padding: 1.5rem 2.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-light);
+    /*box-shadow: 6px 6px 14px 0 rgb(0, 0, 0, 0.2);*/
+    margin: 1rem 1rem;
+}
+
+.tasks-customer-right-list-item {
+    background-color: var(--secondary-light);
+    color: var(--secondary-medium);
+}
+
+.tasks-customer-left-list-item-top,
+.tasks-customer-right-list-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.tasks-customer-left-list-item-title,
+.tasks-customer-right-list-item-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+.tasks-customer-left-list-item-title a,
+.tasks-customer-right-list-item-title a {
+    position: relative;
+    text-decoration: none;
+}
+
+.tasks-customer-left-list-item-title a::before,
+.tasks-customer-right-list-item-title a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--secondary-dark);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.tasks-customer-left-list-item-title a:hover::before,
+.tasks-customer-right-list-item-title a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.tasks-customer-left-list-item-price,
+.tasks-customer-right-list-item-price {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.tasks-customer-left-price-tag,
+.tasks-customer-right-price-tag {
+    font-weight: 700;
+}
+.tasks-customer-left-price-number,
+.tasks-customer-right-price-number {
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.tasks-customer-left-list-item-bottom,
+.tasks-customer-right-list-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
+.tasks-customer-left-list-item-desc-address,
+.tasks-customer-right-list-item-desc-address {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.tasks-customer-left-list-item-desc-when,
+.tasks-customer-right-list-item-desc-when {
+    display: flex;
+    margin-top: 12px;
+    font-size: 16px;
+}
+.tasks-customer-left-list-item-desc-date-title,
+.tasks-customer-right-list-item-desc-date-title {
+    font-weight: 500;
+}
+
+.tasks-customer-left-list-item-desc-date-time,
+.tasks-customer-right-list-item-desc-date-time {
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.tasks-customer-right-list-item-performer {
+    text-align: right;
+}
+
+.tasks-customer-right-list-done-by {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.tasks-customer-right-list-item-performer-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 13 inch MacBook */
+@media only screen and (max-width: 1440px) {
+    .tasks-customer-wrapper {
+        padding: 4rem 1rem;
+    }
+}
+
+/* Large screen */
+@media only screen and (max-width: 1200px) {
+    .tasks-customer-wrapper {
+        padding: 3rem 1rem;
+    }
+
+    .tasks-customer-left-content-title,
+    .tasks-customer-right-content-title {
+        font-size: 24px;
+    }
+    .tasks-customer-left-list-item-title,
+    .tasks-customer-right-list-item-title {
+        font-size: 20px;
+    }
+    .tasks-customer-left-list-item-price,
+    .tasks-customer-right-list-item-price {
+        font-size: 18px;
+    }
+    .tasks-customer-left-list-item-desc-address,
+    .tasks-customer-right-list-item-desc-address {
+        font-size: 16px;
+    }
+    .tasks-customer-left-list-item-desc-when,
+    .tasks-customer-right-list-item-desc-when {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Small screen */
+@media only screen and (max-width: 992px) {
+    .tasks-customer-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .tasks-customer-title-main {
+        font-size: 38px;
+    }
+
+    .tasks-customer-title-sub {
+        font-size: 16px;
+    }
+    .tasks-customer-filter {
+        display: none;
+    }
+    .tasks-customer-role-box {
+        height: 44px;
+        width: 450px;
+    }
+    .tasks-customer-role-customer-button,
+    .tasks-customer-role-performer-button {
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .tasks-customer-left-content-title,
+    .tasks-customer-right-content-title {
+        font-size: 22px;
+    }
+    .tasks-customer-left-list-item-title,
+    .tasks-customer-right-list-item-title {
+        font-size: 18px;
+    }
+    .tasks-customer-left-list-item-price,
+    .tasks-customer-right-list-item-price {
+        font-size: 16px;
+    }
+    .tasks-customer-left-list-item-desc-address,
+    .tasks-customer-right-list-item-desc-address {
+        font-size: 14px;
+    }
+    .tasks-customer-left-list-item-desc-when,
+    .tasks-customer-right-list-item-desc-when {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .tasks-customer-right-list-done-by {
+        font-size: 12px;
+    }
+    .tasks-customer-right-list-item-performer-name {
+        font-size: 14px;
+    }
+}
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .tasks-customer-wrapper {
+        padding: 1rem 1rem;
+    }
+
+    .tasks-customer-title-main {
+        font-size: 34px;
+    }
+
+    .tasks-customer-title-sub {
+        font-size: 16px;
+    }
+
+    .tasks-customer-role-box {
+        height: 40px;
+    }
+    .tasks-customer-role-customer-button,
+    .tasks-customer-role-performer-button {
+        height: 32px;
+    }
+
+    .tasks-customer-content {
+        flex-direction: column;
+    }
+    .tasks-customer-left-content,
+    .tasks-customer-right-content {
+        width: 100%;
+    }
+    .tasks-customer-left-list-item,
+    .tasks-customer-right-list-item {
+        margin: 1rem 0;
+    }
+    .tasks-customer-left-content {
+        border-right: none;
+        border-bottom: 1px solid var(--secondary-light);
+    }
+    .tasks-customer-left-content-list {
+        margin-bottom: 2rem;
+    }
+    .tasks-customer-right-content {
+        margin-top: 2rem;
+    }
+    .tasks-customer-right-content-list {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .tasks-customer-title-main {
+        font-size: 30px;
+    }
+
+    .tasks-customer-title-sub {
+        font-size: 14px;
+    }
+
+    .tasks-customer-content {
+        margin-top: 2rem;
+    }
+
+    .tasks-customer-left-content-title,
+    .tasks-customer-right-content-title {
+        font-size: 20px;
+        margin-bottom: 0.75rem;
+    }
+    .tasks-customer-left-content-list {
+        margin-bottom: 1.5rem;
+    }
+    .tasks-customer-right-content {
+        margin-top: 1.5rem;
+    }
+    .tasks-customer-left-list-item,
+    .tasks-customer-right-list-item {
+        padding: 0.75rem 1.5rem;
+    }
+    .tasks-customer-right-content-list {
+        margin-bottom: 1.5rem;
+    }
+}

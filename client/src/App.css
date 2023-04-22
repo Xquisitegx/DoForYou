@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;500;700&family=Dosis:wght@800&family=Montserrat+Alternates:wght@700;900&family=Nunito:wght@700;900&display=swap");
+/*
+font-family: 'Archivo', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Nunito', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo", sans-serif;
+    letter-spacing: -0.04rem;
+    color: var(--text-main);
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+
+:root {
+    --primary-dark-blue: #2e4770;
+    --primary-blue: #4468a4;
+    --primary-light-blue: #9cb3d7;
+    --primary-vital-blue: #6298f0;
+    --primary-brown-yellow: #756851;
+    --primary-yellow: #f5be60;
+    --primary-light-yellow: #f7daaa;
+    --primary-dark-yellow: #c2964c;
+    --cancel: #dadada;
+    --secondary-dark: #1e1e1e;
+    --secondary-medium-dark: #4c4c4d;
+    --secondary-medium: #7a7a7a;
+    --secondary-medium-light: #979797;
+    --secondary-light: #dadada;
+    --secondary-very-light: #ebebeb;
+    --text-main: #1c1c1c;
+    --text-default: #4c4c4d;
+    --text-unselected: #878787;
+    --text-disabled: #a9a9a9;
+}
+#root {
+    height: 100%;
+    min-height: 100vh;
+}
+
+#container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

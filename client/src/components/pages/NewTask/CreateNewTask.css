@@ -1,0 +1,339 @@
+.create-new-task {
+    height: 100%;
+    flex-grow: 1;
+}
+.create-new-task-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.create-new-task-wrapper {
+    display: flex;
+    padding: 5rem 1rem;
+    background-color: #fff;
+}
+
+.create-new-task-wrapper-left {
+    width: 50%;
+    background-color: var(--secondary-very-light);
+    border-radius: 25px;
+    padding: 5rem 1rem;
+}
+
+.create-new-task-wrapper-left-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.create-new-task-wrapper-left-text {
+    color: var(--text-default);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* center? */
+}
+
+.create-new-task-wrapper-left-text-main {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.create-new-task-wrapper-left-text-sub {
+    margin-top: 0.3rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.create-new-task-image {
+    padding: 0 1rem;
+}
+
+.create-new-task-image-box {
+    display: flex;
+    justify-content: center;
+}
+.create-new-task-image-png {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.create-new-task-wrapper-right {
+    width: 50%;
+    height: 100%;
+    margin: 1rem 0 1rem 2rem;
+}
+
+.create-new-task-wrapper-outline {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-new-task-content {
+    margin: auto 0;
+}
+
+.create-new-task-title {
+    width: 320px;
+    margin-bottom: 2rem;
+}
+
+.create-new-task-title > h1 {
+    color: var(--text-main);
+    font-size: 30px;
+    text-align: left;
+}
+
+.create-new-task-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.create-new-task-input-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    color: var(--secondary-medium);
+}
+
+.create-new-task-input-sub-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: var(--secondary-medium);
+}
+
+.create-new-task-input-select,
+.create-new-task-input-sub-select {
+    background-color: #fff;
+}
+
+.create-new-task-radio-combine {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+}
+.create-new-task-radio-combine-left,
+.create-new-task-radio-combine-right {
+    display: flex;
+    margin: 10px;
+}
+
+.create-new-task-radio {
+    width: 20px;
+}
+
+.radio-combine-label {
+    margin-left: 10px;
+    color: var(--text-default);
+}
+
+.create-new-task-input-field-input,
+.create-new-task-input-field-sub-input,
+.create-new-task-input-select,
+.create-new-task-input-sub-select {
+    height: 36px;
+}
+
+.create-new-task-input-field-input,
+.create-new-task-input-field-sub-input,
+.create-new-task-input-select,
+.create-new-task-input-sub-select,
+.create-new-task-input-field-textarea {
+    width: 100%;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+}
+
+.create-new-task-input-field-input,
+.create-new-task-input-select,
+.create-new-task-input-field-textarea {
+    margin-bottom: 2rem;
+}
+
+.create-new-task-input-sub-select {
+    margin-bottom: 0.6rem;
+}
+
+.create-new-task-input-field-sub-input {
+    margin-bottom: 0.6rem;
+}
+
+.create-new-task-input-select {
+    height: 36px;
+    width: 100%;
+}
+
+/* ----- */
+.create-new-task-date-and-time-combine {
+    display: flex;
+}
+
+.create-new-task-date-and-time-combine-left {
+    margin-right: 1rem;
+}
+
+.create-new-task-date-and-time-combine-left,
+.create-new-task-date-and-time-combine-right {
+    width: 50%;
+}
+/* ------ */
+
+.create-new-task-address-combine {
+    display: flex;
+}
+
+.create-new-task-address-combine-left {
+    margin-right: 1rem;
+}
+
+.create-new-task-address-combine-left,
+.create-new-task-address-combine-right {
+    width: 50%;
+}
+.create-new-task-label-combine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-new-task-submit {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-new-task-input-sub-label {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--text-disabled);
+}
+
+.create-new-task-input-budget-section {
+    display: flex;
+    align-items: center;
+}
+
+.create-new-task-input-dollar {
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+}
+
+.new-task-bottom {
+    display: flex;
+    width: 100%;
+}
+
+.new-task-cancel {
+    width: 30%;
+}
+
+.new-task-submit {
+    width: 70%;
+    margin-left: 1rem;
+}
+
+/* 13 inch MacBook */
+@media only screen and (max-width: 1440px) {
+    .create-new-task-wrapper-left {
+        width: 45%;
+    }
+    .create-new-task-wrapper-right {
+        width: 55%;
+    }
+}
+
+/* Large screen */
+@media only screen and (max-width: 1200px) {
+    .create-new-task-wrapper-left {
+        width: 45%;
+    }
+
+    .create-new-task-wrapper-right {
+        width: 55%;
+    }
+}
+
+/* Small screen */
+@media only screen and (max-width: 992px) {
+    .create-new-task-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .create-new-task-wrapper {
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .create-new-task-wrapper-left {
+        width: 100%;
+    }
+    .create-new-task-wrapper-left-text {
+        height: 100%;
+    }
+
+    .create-new-task-image-box {
+        width: 90%;
+        margin: 4rem auto 0;
+    }
+
+    .create-new-task-wrapper-right {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .create-new-task-title {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .info-combine {
+        flex-direction: column;
+    }
+
+    .new-task-submit {
+        margin-left: 0.5rem;
+    }
+
+    .new-task-bottom .btn--wide-bold {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .create-new-task-wrapper-left-text-main {
+        font-size: 18px;
+    }
+    .create-new-task-wrapper-left-text-sub {
+        font-size: 14px;
+    }
+    .create-new-task-title > h1 {
+        font-size: 25px;
+    }
+    .create-new-task-input-label {
+        font-size: 12px;
+    }
+    .create-new-task-input-field-input,
+    .create-new-task-input-field-sub-input,
+    .create-new-task-input-select,
+    .create-new-task-input-sub-select,
+    .create-new-task-input-field-textarea {
+        font-size: 14px;
+    }
+    .create-new-task-input-field .radio-combine-label {
+        font-size: 14px;
+    }
+
+    .new-task-bottom .btn--wide-bold {
+        font-size: 14px;
+    }
+}

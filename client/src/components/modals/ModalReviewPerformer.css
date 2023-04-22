@@ -1,0 +1,110 @@
+.modal-review-performer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-review-performer-content {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-review-performer-header,
+.modal-review-performer-footer {
+    padding: 10px;
+}
+.modal-review-performer-header {
+    background-color: var(--secondary-medium);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.modal-review-performer-title {
+    margin: 0 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.modal-review-performer-body {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 1rem;
+}
+
+.modal-review-performer-user-image-box {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-review-performer-user-image {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+.modal-review-performer-user-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.modal-review-performer-body-username {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.modal-review-performer-stars-box {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.modal-review-performer-stars {
+    display: flex;
+}
+
+.modal-review-performer-star {
+    display: flex;
+    margin: 0 2px;
+}
+
+.review-performer-star {
+    cursor: pointer;
+}
+
+.modal-review-performer-body-opinion-box {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-review-performer-body-opinion-textarea {
+    border: 1px solid var(--secondary-medium);
+    background-color: var(--secondary-very-light);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 3rem;
+    resize: none;
+}
+.modal-review-performer-btns {
+    display: flex;
+    margin: 0 3rem 2rem;
+}
+
+.modal-review-performer-cancel-btn,
+.modal-review-performer-submit-btn {
+    width: 100%;
+}
+
+.modal-review-performer-cancel-btn {
+    margin-left: 10px;
+}

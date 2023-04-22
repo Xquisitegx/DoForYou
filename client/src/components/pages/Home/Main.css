@@ -1,0 +1,348 @@
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    padding: 10rem 0 6rem;
+}
+
+.main-content {
+    position: absolute;
+    margin-left: 40rem;
+    margin-bottom: 30rem;
+}
+
+.main-text {
+    text-align: center;
+    z-index: 1;
+}
+
+.main-text > h1 {
+    font-size: 150px;
+    font-family: "Dosis", sans-serif;
+    color: #fff;
+    -webkit-text-stroke: 2px var(--text-main);
+    letter-spacing: -0.35rem;
+}
+
+.main-text > h2 {
+    margin-top: 8px;
+    margin-bottom: -30px;
+    color: #252525;
+    font-size: 45px;
+    font-family: "Dosis", sans-serif;
+}
+
+.deco-cursor {
+    width: 420px;
+    height: 55px;
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    z-index: 2;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: rgba(68, 104, 164, 0.25);
+    cursor: default;
+}
+
+.deco-cursor-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #4468a4;
+}
+
+.deco-cursor-text {
+    position: absolute;
+    top: -28px;
+    margin-bottom: 0;
+    padding: 2px 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #4468a4;
+    color: #fff;
+}
+
+.deco-cursor-text-block {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.link-to-about-us {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-image {
+    width: 1300px;
+}
+
+.main-image-png {
+    height: 580px;
+}
+
+.main-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+.main-get-started-btn-box,
+.main-contact-us-btn-box {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.main-get-started-btn-box {
+    width: 200px;
+    padding: 15px 0;
+    border: 2px solid var(--secondary-dark);
+    border-radius: 15px;
+    background-color: var(--secondary-dark);
+}
+.main-get-started-btn {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-get-started-btn-name {
+    font-size: 18px;
+    color: #fff;
+}
+
+.main-contact-us-btn-box {
+    width: 200px;
+    padding: 15px 0;
+    border: 2px solid var(--secondary-dark);
+    border-radius: 15px;
+    background-color: #fff;
+}
+.main-contact-us-btn {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-contact-us-btn-icon,
+.main-contact-us-btn-name {
+    font-size: 18px;
+}
+
+.main-btn-link-contact {
+    color: var(--secondary-dark);
+    text-decoration: none;
+}
+
+.chat-icon {
+    margin-left: 7px;
+}
+/* 13 inch MacBook */
+@media only screen and (max-width: 1440px) {
+    .main-content {
+        margin-left: 30rem;
+        margin-bottom: 30rem;
+    }
+
+    .main-image {
+        width: 1100px;
+    }
+}
+/* Large screen */
+@media only screen and (max-width: 1200px) {
+    .main-content {
+        margin-left: 15rem;
+        margin-bottom: 30rem;
+    }
+
+    .main-image {
+        width: 900px;
+    }
+
+    .main-image-png {
+        height: 500px;
+    }
+
+    .main-text > h1 {
+        font-size: 130px;
+    }
+
+    .main-text > h2 {
+        font-size: 40px;
+    }
+
+    .deco-cursor {
+        width: 370px;
+        height: 50px;
+        left: 100px;
+        top: 10px;
+    }
+}
+
+/* Small Screen */
+@media only screen and (max-width: 992px) {
+    .main-container {
+        padding: 20rem 0 6rem;
+    }
+    .main-content {
+        margin-left: 0rem;
+        margin-bottom: 45rem;
+    }
+
+    .main-image {
+        width: 750px;
+    }
+
+    .main-image-png {
+        height: 400px;
+    }
+
+    .main-text > h1 {
+        font-size: 120px;
+        letter-spacing: -0.25rem;
+    }
+
+    .main-text > h2 {
+        font-size: 38px;
+    }
+
+    .deco-cursor {
+        width: 350px;
+        height: 46px;
+        left: 90px;
+        top: 10px;
+    }
+
+    .main-btns {
+        justify-content: center;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    .main-container {
+        padding: 18rem 0 6rem;
+    }
+    .main-content {
+        margin-left: 0rem;
+        margin-bottom: 40rem;
+    }
+
+    .main-image {
+        width: 650px;
+    }
+
+    .main-image-png {
+        height: 350px;
+    }
+
+    .main-text > h1 {
+        font-size: 100px;
+        letter-spacing: -0.2rem;
+    }
+
+    .main-text > h2 {
+        font-size: 32px;
+        margin-bottom: -20px;
+        margin-right: 20px;
+    }
+
+    .deco-cursor {
+        width: 295px;
+        height: 40px;
+        left: 95px;
+        top: 10px;
+    }
+
+    .deco-cursor-text-block {
+        font-size: 16px;
+    }
+
+    .link-to-about-us {
+        font-size: 16px;
+    }
+
+    .main-btns {
+        display: flex;
+        justify-content: center;
+    }
+    .main-get-started-btn-box,
+    .main-contact-us-btn-box {
+        width: 180px;
+        padding: 12px 0;
+        border-radius: 12px;
+    }
+
+    .main-get-started-btn-name,
+    .main-contact-us-btn-icon,
+    .main-contact-us-btn-name {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .main-container {
+        padding: 20rem 0 5rem;
+    }
+    .main-content {
+        margin-left: 0rem;
+        margin-bottom: 35rem;
+    }
+
+    .main-image {
+        width: 500px;
+    }
+
+    .main-image-png {
+        height: 250px;
+    }
+
+    .main-text > h1 {
+        font-size: 70px;
+        letter-spacing: -0.1rem;
+    }
+
+    .main-text > h2 {
+        font-size: 24px;
+        margin-bottom: -10px;
+    }
+
+    .deco-cursor {
+        width: 215px;
+        height: 30px;
+        left: 55px;
+        top: 10px;
+    }
+
+    .deco-cursor-text {
+        padding: 0 5px;
+        top: -24px;
+    }
+
+    .deco-cursor-text-block {
+        font-size: 11px;
+    }
+
+    .link-to-about-us {
+        font-size: 11px;
+    }
+
+    .main-btns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-contact-us-btn-box {
+        margin-top: 6px;
+    }
+}
